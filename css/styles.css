@@ -13,10 +13,21 @@ body {
     width: 100%;
 }
 
-header {
+header, .main-container {
     border-bottom: 1px solid #969696;
     /*box-shadow: 0 0 10px #585858;*/
 }
+
+.header-container, .skills-section,
+.experience-section, .education-section,
+.footer-container, .portfolio-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px 40px;
+    overflow: hidden;
+}
+
 
 .header-container {
     max-width: 1200px;
@@ -43,6 +54,7 @@ header {
     background-image: url("../images/my-logo.JPG");
     background-repeat: no-repeat;
     background-size: cover;
+    margin-left: 20px;
 }
 
 .header-logo:hover {
@@ -74,4 +86,60 @@ header {
 
 .header-menu a:active{
     color: #000000;
+}
+
+.skills-side, .education-side, .experience-side {
+    text-align: center;
+    float: left;
+    padding: 20px 0;
+}
+
+.skills-logo, .education-logo, .experience-logo {
+    width: 100px;
+    height: 100px;
+}
+
+.skills-main {
+    max-width: 500px;
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    justify-content: space-between;
+}
+
+.skills-main div {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.experience-main {
+    max-width: 500px;
+    float: right;
+    padding: 20px 0;
+}
+
+.experience-main div {
+    margin-bottom: 20px;
+}
+
+.experience-main div:nth-last-child(1) {
+    margin-bottom: 0;
+}
+.education-main {
+    max-width: 500px;
+    float: right;
+    padding: 20px 0;
+}
+
+.education-s-1 {
+    margin-bottom: 20px;
+}
+
+footer {
+    clear:both;
+}
+
+.footer-container {
+    text-align: center;
 }
