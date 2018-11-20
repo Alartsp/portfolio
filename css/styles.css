@@ -20,7 +20,8 @@ header, .main-container {
 
 .header-container, .skills-section,
 .experience-section, .education-section,
-.footer-container, .portfolio-section {
+.footer-container, .portfolio-section,
+.contact-section {
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
