@@ -89,13 +89,15 @@ header, .main-container {
     color: #000000;
 }
 
-.skills-side, .education-side, .experience-side {
+.skills-side, .education-side, .experience-side,
+.contact-side {
     text-align: center;
     float: left;
     padding: 20px 0;
 }
 
-.skills-logo, .education-logo, .experience-logo {
+.skills-logo, .education-logo, .experience-logo,
+.contacts-logo {
     width: 100px;
     height: 100px;
 }
@@ -135,6 +137,31 @@ header, .main-container {
 
 .education-s-1 {
     margin-bottom: 20px;
+}
+
+.contact-main {
+    max-width: 500px;
+    float: right;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact-main ul {
+    list-style-type: none;
+}
+
+.contact-main li {
+
+}
+
+.my-info-data {
+    margin-left: 100px;
+}
+
+.my-info-data img {
+    width: 25px;
 }
 
 footer {
