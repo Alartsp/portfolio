@@ -51,19 +51,16 @@ header, .main-container {
     width: 60px;
     height: 60px;
     border-radius: 5px;
-    box-shadow: 0 0 5px #000000;
+    box-shadow: inset 0 0 5px #000000;
     background-image: url("../images/my-logo.JPG");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     margin-left: 20px;
-}
-
-.header-logo:hover {
-    box-shadow: 0 0 10px #000000;
 }
 
 .header-logo:active {
     box-shadow: inset 0 0 10px #000000;
+    background-size: 99%;
 }
 
 .header-menu ul{
@@ -143,21 +140,45 @@ header, .main-container {
     max-width: 500px;
     float: right;
     padding: 20px 0;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+}
+
+.contact-side p {
+    display: block;
+    padding: 5px;
+    border: 1px solid #959595;
+    border-radius: 5px;
+    background-color: #cecece;
+    box-shadow: inset 0 0 5px #000000;
+}
+
+.download-btn {
+    text-decoration: none;
+    color: black;
+}
+
+.contact-side p:active{
+    box-shadow: 0 0 10px #000000;
 }
 
 .contact-main ul {
     list-style-type: none;
 }
 
-.contact-main li {
-
+.contact-main div {
+    width: 500px;
+    height: 10px;
 }
 
-.my-info-data {
-    margin-left: 100px;
+.my-info-tittle + span {
+    display: block;
+    padding-left: 100px;
+    margin-bottom: 15px;
+}
+
+.my-info-tittle {
+
+    display: block;
+    float: left;
 }
 
 .my-info-data img {
